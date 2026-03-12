@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Seminário</title>
+    <style>
+        /* Estilo App */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #A0522D; /* Siena Queimado */
+            color: white; 
+            margin: 0; 
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .menu-container {
+            width: 100%;
+            max-width: 400px;
+            display: grid;
+            gap: 15px;
+        }
+
+        /* Consoles Clicáveis */
+        .btn-tema {
+            background-color: #B8860B; /* Marrom Ocre */
+            color: white;
+            border: none;
+            padding: 20px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: left;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            transition: transform 0.2s;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .btn-tema:active {
+            transform: scale(0.98);
+            filter: brightness(1.1);
+        }
+
+        .numero {
+            background: rgba(255,255,255,0.2);
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-right: 15px;
+            font-size: 14px;
+        }
+
+        footer {
+            margin-top: auto;
+            padding-top: 40px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .btn-aval {
+            background-color: #555;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            display: block;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo-192.png" width="80" alt="Logo">
+        <h2>Temas do Seminário</h2>
+    </header>
+
+    <div class="menu-container">
+        <a href="2.html" class="btn-tema">
+            <span class="numero">1</span>
+            A Capacitação do Missionário
+        </a>
+
+        <a href="3.html" class="btn-tema">
+            <span class="numero">2</span>
+            A Estrutura de Envio
+        </a>
+
+        <a href="4.html" class="btn-tema">
+            <span class="numero">3</span>
+            Desafios Contemporâneos
+        </a>
+
+        <a href="5.html" class="btn-tema">
+            <span class="numero">4</span>
+            O Alinhamento Eclesiástico
+        </a>
+    </div>
+
+    <footer>
+        <a href="6.html" class="btn-aval">Acessar Avaliação Final</a>
+    </footer>
+
+</body>
+</html>

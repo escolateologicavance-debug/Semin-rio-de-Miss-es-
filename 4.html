@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 3 - Desafios Contemporâneos</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background-color: #A0522D; color: white; margin: 0; padding: 0; }
+        header { background-color: #000; padding: 15px; text-align: center; border-bottom: 3px solid #B8860B; }
+        .subtitulo { color: #B8860B; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+        
+        .acessibilidade { background: white; padding: 15px; display: flex; justify-content: space-around; margin: 10px; border-radius: 8px; }
+        .btn-acc { border: 1px solid #ccc; padding: 10px; cursor: pointer; color: #333; font-weight: bold; border-radius: 5px; font-size: 14px; }
+        
+        .conteudo { padding: 20px; line-height: 1.6; text-align: justify; padding-bottom: 50px; }
+        h1 { color: #fff; background: #800000; padding: 15px; border-radius: 5px; font-size: 20px; text-align: center; text-transform: uppercase; }
+        
+        /* Citação Clicável */
+        .citacao-impacto { background: #000; color: #FFD700; padding: 20px; border-left: 5px solid #FF0000; margin: 25px 0; cursor: pointer; transition: 0.3s; }
+        .citacao-impacto:active { transform: scale(0.95); }
+        .tooltip { font-size: 11px; color: #aaa; display: block; margin-top: 10px; text-transform: uppercase; }
+
+        .card-confronto { background: #B8860B; margin-bottom: 15px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.3); }
+        .card-header { padding: 15px; cursor: pointer; font-weight: bold; font-size: 17px; }
+        .card-body { padding: 15px; background: rgba(0,0,0,0.2); display: none; border-top: 1px solid rgba(255,255,255,0.1); }
+        
+        .alerta-caixa { background: #fdf2f2; color: #a94442; padding: 15px; border-radius: 8px; margin: 20px 0; font-weight: bold; border: 2px solid #a94442; }
+        
+        footer { background: #1a1a1a; color: #999; padding: 20px; text-align: center; font-size: 11px; }
+        .btn-voltar { background: #B8860B; color: white; padding: 12px 25px; text-decoration: none; border-radius: 20px; font-weight: bold; display: inline-block; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="subtitulo">Módulo de Ruptura</div>
+    <div style="color:#B8860B; font-weight: bold;">DESAFIOS CONTEMPORÂNEOS</div>
+</header>
+
+<div class="acessibilidade">
+    <div class="btn-acc" onclick="lerTexto()"> ▶ OUVIR AULA</div>
+    <div class="btn-acc" onclick="pararLeitura()"> ⏹ PARAR</div>
+</div>
+
+<div class="conteudo" id="texto-aula">
+    <h1>O Fim da Bolha e o Cristianismo Plantonista</h1>
+
+    <p>A igreja moderna tornou-se uma especialista em "eventos" e uma analfabeta em "presença". Criamos redutos de conforto enquanto as lacunas sociais sangram. Missões não é um apêndice do orçamento; é a razão da nossa existência. O comodismo cristão é o maior aliado do inferno.</p>
+
+    <div class="citacao-impacto" onclick="alert('O chamado não é para observar o incêndio, mas para invadir o fogo. Missão é operação de resgate, não desfile espiritual.')">
+        "E salvai alguns com temor, arrebatando-os do fogo, odiando até a túnica manchada pela carne."
+        <span class="tooltip">Clique para meditar — Judas 1:23</span>
+    </div>
+
+    <p>Abaixo, confrontamos as rotas de fuga que a igreja contemporânea criou para não cumprir o seu dever:</p>
+
+    <div class="card-confronto">
+        <div class="card-header" onclick="toggleCard(this)">1. A Igreja Plantonista vs. Igreja Missionária</div>
+        <div class="card-body">
+            O "Plantonista" apenas ocupa o posto. Ele cumpre o horário, canta o hino e vai para casa. A Igreja Missionária, por outro lado, é um organismo de invasão. Ela não espera que o faminto venha ao altar; ela leva o pão e o Evangelho onde o caos está instalado. Ser "plantonista" é assistir a condenação do mundo da primeira fila do templo.
+        </div>
+    </div>
+
+    <div class="card-confronto">
+        <div class="card-header" onclick="toggleCard(this)">2. O Furto da Estratégia pelo Tradicionalismo</div>
+        <div class="card-body">
+            O tradicionalismo engessa a missão sob o pretexto de "zelo". Confundimos métodos arcaicos com a sã doutrina. Adequação estratégica não é pecado; é inteligência espiritual. Mudar a rota para alcançar uma nova geração não é abandonar a Deus, é perseguir o objetivo com a mesma entrega dos pioneiros, que usaram a tecnologia de seu tempo (imprensa, navios, ferrovias).
+        </div>
+    </div>
+
+    <div class="card-confronto">
+        <div class="card-header" onclick="toggleCard(this)">3. Ocupação de Lacunas Sociais</div>
+        <div class="card-body">
+            Onde o Estado falha, a Igreja deve sobrar. Se o missionário não é visto como um agente de transformação real (educação, dignidade, justiça), seu discurso soa como "metal que tine". A presença marcante da Igreja deve causar desassossego no sistema mundano pela sua eficiência e amor prático.
+        </div>
+    </div>
+
+    <div class="card-confronto">
+        <div class="card-header" onclick="toggleCard(this)">4. A Bolha do Entretenimento</div>
+        <div class="card-body">
+            Gastamos milhões em luzes e som para entreter quem já está salvo, enquanto o campo missionário recebe as migalhas do que sobra. Precisamos de um choque de realidade: o altar de Deus não é palco, é lugar de sacrifício. Se sua fé não causa desconforto ao seu ego, ela não serve para missões.
+        </div>
+    </div>
+
+    <div class="alerta-caixa">
+        REFLEXÃO ÁCIDA: <br> Se sua igreja local fechasse as portas hoje, o bairro sentiria falta do serviço prestado ou apenas o prédio ficaria vazio?
+    </div>
+
+    <div style="text-align:center;">
+        <a href="1.html" class="btn-voltar">Voltar ao Catálogo</a>
+    </div>
+</div>
+
+<footer>
+    Gilberto Moreira - Faculdade Teológica AVANCE e Seminário HAZAQ<br>
+    Válido em todo território nacional conforme a Lei nº 9.394/96
+</footer>
+
+<script>
+    function toggleCard(header) {
+        const body = header.nextElementSibling;
+        const isVisible = body.style.display === "block";
+        document.querySelectorAll('.card-body').forEach(b => b.style.display = "none");
+        body.style.display = isVisible ? "none" : "block";
+    }
+
+    function lerTexto() {
+        window.speechSynthesis.cancel();
+        const textoParaLer = document.getElementById('texto-aula').innerText;
+        const msg = new SpeechSynthesisUtterance(textoParaLer);
+        msg.lang = 'pt-BR';
+        msg.rate = 1.1;
+        window.speechSynthesis.speak(msg);
+    }
+
+    function pararLeitura() {
+        window.speechSynthesis.cancel();
+    }
+</script>
+
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+
+</body>
+</html>

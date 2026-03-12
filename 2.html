@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 1 - Capacitação</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background-color: #A0522D; color: white; margin: 0; padding: 0; }
+        header { background-color: #000; padding: 15px; text-align: center; border-bottom: 3px solid #B8860B; }
+        .subtitulo { color: #B8860B; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+        
+        .acessibilidade { background: white; padding: 15px; display: flex; justify-content: space-around; margin: 10px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3); }
+        .btn-acc { border: 1px solid #ccc; padding: 10px; cursor: pointer; color: #333; font-weight: bold; display: flex; align-items: center; gap: 5px; border-radius: 5px; }
+        
+        .conteudo { padding: 20px; line-height: 1.6; text-align: justify; padding-bottom: 100px; }
+        h1 { color: #800000; background: white; padding: 10px; border-radius: 5px; font-size: 22px; text-align: center; }
+        h3 { color: #FFD700; border-left: 5px solid #B8860B; padding-left: 10px; margin-top: 30px; margin-bottom: 10px; }
+        
+        .citacao { background: rgba(0,0,0,0.2); border-left: 4px solid white; padding: 15px; font-style: italic; margin: 20px 0; }
+        .fonte { font-size: 12px; color: #ddd; display: block; margin-top: 5px; }
+        
+        .libras-box { background: #f9f9f9; color: #666; padding: 15px; text-align: center; border-radius: 8px; margin: 10px 0; border: 1px dashed #B8860B; }
+        
+        footer { background: #1a1a1a; color: #999; padding: 20px; text-align: center; font-size: 12px; border-top: 1px solid #333; }
+        .nav-buttons { margin: 20px 0; }
+        .btn-voltar { background: #B8860B; color: white; padding: 12px 25px; text-decoration: none; border-radius: 20px; font-weight: bold; display: inline-block; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="subtitulo">Seminário de Missões</div>
+    <div style="color:#B8860B; font-weight: bold;">A CAPACITAÇÃO DO MISSIONÁRIO</div>
+</header>
+
+<div class="acessibilidade">
+    <div class="btn-acc" onclick="lerTexto()"> ▶ OUVIR AULA</div>
+    <div class="btn-acc" onclick="pararLeitura()"> ⏹ PARAR</div>
+</div>
+
+<div class="conteudo" id="texto-aula">
+    <h1>A Capacitação: O Alicerce do Envio</h1>
+
+    <div class="libras-box">Tradução LIBRAS ativa ✋🤘</div>
+
+    <div class="citacao">
+        "A natureza da Igreja é missionária; se você é cristão, ou está evangelizando ou está enganando. Se você se diz cristão e não faz algum trabalho para o Reino, então você não é cristão, é um charlatão." 
+        <span class="fonte">— Gilberto Moreira</span>
+    </div>
+
+    <p>O fracasso de inúmeras frentes missionárias não reside na falta de fé, mas na ausência de preparo técnico e emocional. A "carência de capacidades" transforma o enviado em um fardo para a igreja local no campo, gerando traumas e interrupções desastrosas.</p>
+
+    <h3>1. O Exemplo Histórico de 1911</h3>
+    <p>Daniel Berg e Gunnar Vingren não eram apenas homens de oração, eram homens de estratégia. Daniel Berg, como torneiro mecânico, assumiu o suporte braçal para que Gunnar Vingren pudesse focar na barreira linguística. Essa divisão intelectual e prática permitiu que o Evangelho fosse comunicado com precisão em solo brasileiro. 
+    <br><em>(Fonte: Vingren, Ivar. O Diário do Pioneiro, pág 45. Ed. CPAD)</em></p>
+
+    <h3>2. Capacitação Psicológica</h3>
+    <p>O missionário lida com o luto cultural e o isolamento social. Sem resiliência psicológica, o indivíduo sucumbe ao Burnout. Dados da WEA (World Evangelical Alliance) mostram que 43% das saídas do campo ocorrem por causas evitáveis ligadas à saúde mental e conflitos interpessoais.</p>
+
+    <h3>3. Capacitação Intelectual</h3>
+    <p>O preparo teológico impede o sincretismo. O missionário precisa saber separar o que é o Evangelho Eterno do que é meramente sua cultura de origem. Orlando Boyer relata que grandes heróis da fé dedicavam anos ao estudo antes do primeiro embarque.
+    <br><em>(Fonte: Boyer, Orlando. Galeria dos Heróis da Fé, pág 112)</em></p>
+
+    <h3>4. Domínio Cultural e Antropológico</h3>
+    <p>Compreender o "ethnos" (povo) é fundamental. Sem o estudo da antropologia missionária, o enviado corre o risco de cometer etnocentrismo, tentando "ocidentalizar" o nativo em vez de cristianizá-lo.</p>
+
+    <h3>5. Capacitação Eclesiástica</h3>
+    <p>Ninguém envia a si mesmo. O preparo eclesiástico envolve submissão e prestação de contas. A carência de uma base eclesial sólida é a receita para o isolamento doutrinário e a queda moral no campo remoto.</p>
+
+    <h3>6. Preparo Profissional (Tentmaking)</h3>
+    <p>Assim como Berg era torneiro e Paulo fabricava tendas, a capacitação profissional permite o acesso a países fechados (Janela 10/40) onde vistos para "religiosos" são proibidos, mas "especialistas" são bem-vindos.</p>
+
+    <h3>7. Inteligência Emocional e Gestão de Conflitos</h3>
+    <p>A convivência em equipes transculturais gera atritos. É necessário saber perdoar depressa e negociar diferenças sem comprometer a missão. A engenharia do perdão é uma ferramenta de sobrevivência.</p>
+
+    <h3>8. Capacitação Linguística Exigente</h3>
+    <p>Quem não fala a língua do povo, fala apenas para as paredes ou depende de intérpretes que podem distorcer a mensagem. A fluência é um sinal de respeito e amor pelas almas.</p>
+
+    <h3>9. Noções de Saúde e Primeiros Socorros</h3>
+    <p>Em contextos de selva ou zonas de guerra, o missionário é o primeiro atendimento médico. O conhecimento básico de saúde comunitária pode ser a porta de entrada para a evangelização através do cuidado social.</p>
+
+    <h3>10. Gestão de Recursos e Mordomia</h3>
+    <p>O missionário precisa ser um exímio gestor financeiro. O dinheiro das ofertas é sagrado e cada centavo deve ser otimizado para a expansão do Reino, exigindo transparência absoluta com os mantenedores.</p>
+
+    <h3>11. Preparo Espiritual e Intercessão</h3>
+    <p>A técnica sem a unção é estéril. O preparo intelectual deve caminhar junto com uma vida de oração fervorosa. Como dizia Hudson Taylor: "A obra de Deus feita à maneira de Deus, nunca terá falta de recursos".</p>
+
+    <div class="nav-buttons">
+        <a href="1.html" class="btn-voltar">Voltar ao Catálogo</a>
+    </div>
+</div>
+
+<footer>
+    Gilberto Moreira - Faculdade Teológica AVANCE e Seminário HAZAQ<br>
+    Válido em todo território nacional conforme a Lei nº 9.394/96
+</footer>
+
+<script>
+    function lerTexto() {
+        // Cancela qualquer áudio em execução antes de começar
+        window.speechSynthesis.cancel();
+        
+        const textoParaLer = document.getElementById('texto-aula').innerText;
+        const msg = new SpeechSynthesisUtterance();
+        msg.text = textoParaLer;
+        msg.lang = 'pt-BR';
+        msg.rate = 1.1; // Velocidade levemente aumentada para naturalidade
+        
+        window.speechSynthesis.speak(msg);
+    }
+
+    function pararLeitura() {
+        window.speechSynthesis.cancel();
+    }
+</script>
+
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 4 - Alinhamento Eclesiástico</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background-color: #A0522D; color: white; margin: 0; padding: 0; }
+        header { background-color: #000; padding: 15px; text-align: center; border-bottom: 3px solid #B8860B; }
+        .subtitulo { color: #B8860B; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+        
+        .acessibilidade { background: white; padding: 15px; display: flex; justify-content: space-around; margin: 10px; border-radius: 8px; }
+        .btn-acc { border: 1px solid #ccc; padding: 10px; cursor: pointer; color: #333; font-weight: bold; border-radius: 5px; font-size: 14px; }
+        
+        .conteudo { padding: 20px; line-height: 1.6; text-align: justify; padding-bottom: 50px; }
+        h1 { color: #FFD700; border-bottom: 2px solid #B8860B; padding-bottom: 10px; font-size: 22px; text-align: center; }
+        
+        /* Box de Alinhamento Estratégico */
+        .alinhamento-grid { display: grid; gap: 15px; margin: 20px 0; }
+        .ponto-alinhamento { background: rgba(0,0,0,0.4); border: 1px solid #B8860B; padding: 15px; border-radius: 12px; cursor: pointer; transition: 0.3s; }
+        .ponto-alinhamento:hover { background: rgba(184, 134, 11, 0.2); }
+        .status-on { color: #00FF00; font-size: 10px; font-weight: bold; float: right; }
+
+        .manifesto { background: #fff; color: #333; padding: 25px; border-radius: 2px; border-left: 15px solid #000; font-family: 'Georgia', serif; position: relative; }
+        .manifesto:before { content: "“"; font-size: 80px; position: absolute; top: -10px; left: 10px; color: rgba(0,0,0,0.1); }
+
+        .btn-finalizar { background: #000; color: #FFD700; padding: 20px; text-decoration: none; border-radius: 10px; font-weight: bold; display: block; text-align: center; margin-top: 30px; border: 2px solid #B8860B; animation: pulse 2s infinite; }
+        @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(184, 134, 11, 0.7); } 70% { box-shadow: 0 0 0 15px rgba(184, 134, 11, 0); } 100% { box-shadow: 0 0 0 0 rgba(184, 134, 11, 0); } }
+
+        footer { background: #1a1a1a; color: #999; padding: 20px; text-align: center; font-size: 11px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="subtitulo">Conclusão Teológica e Prática</div>
+    <div style="color:#B8860B; font-weight: bold;">O ALINHAMENTO ECLESIÁSTICO</div>
+</header>
+
+<div class="acessibilidade">
+    <div class="btn-acc" onclick="lerTexto()"> ▶ OUVIR AULA</div>
+    <div class="btn-acc" onclick="pararLeitura()"> ⏹ PARAR</div>
+</div>
+
+<div class="conteudo" id="texto-aula">
+    <h1>A Igreja vs. O Espírito da Época (Zeitgeist)</h1>
+
+    <p>O maior perigo de uma missão não são as perseguições externas, mas o <strong>desalinhamento interno</strong>. Quando a Igreja tenta se "atualizar" para agradar o mundo, ela não se torna relevante, ela se torna redundante. O alinhamento eclesiástico é o retorno à forma original: ser o sal que salga, não o sal que se mistura à areia.</p>
+
+    <div class="manifesto">
+        "O mundo não precisa de uma Igreja que seja um espelho de seus pecados, mas de uma Igreja que seja uma vidraça para a Glória de Deus."
+    </div>
+
+    <h3>Pontos de Ajuste de Rota (Toque para ler):</h3>
+
+    <div class="alinhamento-grid">
+        <div class="ponto-alinhamento" onclick="alert('Alinhamento 1: A Missão não é nossa. A Igreja não cria a missão; a Missão do Reino é que criou a Igreja. Somos servos do propósito, não donos da obra.')">
+            <span class="status-on">● ATIVO</span>
+            <strong>1. Primazia da Missio Dei</strong>
+            <p style="font-size: 13px; margin: 5px 0;">O ajuste do foco: De quem é a glória?</p>
+        </div>
+
+        <div class="ponto-alinhamento" onclick="alert('Alinhamento 2: A cultura deve ser compreendida, mas nunca imitada se ferir a santidade. O missionário é um diplomata do céu em solo estrangeiro.')">
+            <span class="status-on">● ATIVO</span>
+            <strong>2. Contextualização vs. Sincretismo</strong>
+            <p style="font-size: 13px; margin: 5px 0;">Falar a língua do povo sem perder o sotaque de Sião.</p>
+        </div>
+
+        <div class="ponto-alinhamento" onclick="alert('Alinhamento 3: Igreja não é clube. O alinhamento exige que cada membro seja um atalaia. A eclesiologia deve ser orgânica e agressiva contra as trevas.')">
+            <span class="status-on">● ATIVO</span>
+            <strong>3. Rigor Eclesiológico</strong>
+            <p style="font-size: 13px; margin: 5px 0;">Estrutura que serve ao movimento, não o contrário.</p>
+        </div>
+    </div>
+
+    <h3>O Alinhamento Final: A Perspectiva da Eternidade</h3>
+    <p>Concluímos este seminário entendendo que a Igreja que não vive para missões, não serve para viver. O alinhamento final é o compromisso inegociável com a Grande Comissão. Não somos chamados para manter prédios, mas para expandir territórios espirituais. </p>
+    
+    <p>O missionário alinhado não busca o aplauso da denominação, mas o "bem está, servo bom e fiel" do seu Senhor. O fim da linha deste seminário é o começo da sua jornada no campo.</p>
+
+    <a href="6.html" class="btn-finalizar">CONCLUIR E ACESSAR AVALIAÇÃO</a>
+
+    <div style="text-align:center; margin-top: 20px;">
+        <a href="1.html" style="color: #ddd; text-decoration: underline; font-size: 13px;">Voltar ao Catálogo</a>
+    </div>
+</div>
+
+<footer>
+    Gilberto Moreira - Faculdade Teológica AVANCE e Seminário HAZAQ<br>
+    Válido em todo território nacional conforme a Lei nº 9.394/96
+</footer>
+
+<script>
+    function lerTexto() {
+        window.speechSynthesis.cancel();
+        const textoParaLer = document.getElementById('texto-aula').innerText;
+        const msg = new SpeechSynthesisUtterance(textoParaLer);
+        msg.lang = 'pt-BR';
+        msg.rate = 1.1;
+        window.speechSynthesis.speak(msg);
+    }
+    function pararLeitura() { window.speechSynthesis.cancel(); }
+</script>
+
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+
+</body>
+</html>
