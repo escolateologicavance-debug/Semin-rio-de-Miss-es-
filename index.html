@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seminário de Missões</title>
+    <style>
+        body { 
+            font-family: sans-serif; 
+            background: #1a1a1a; 
+            color: white; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            min-height: 100vh; 
+            margin: 0; 
+        }
+
+        .container { 
+            text-align: center; 
+            width: 90%; 
+            max-width: 400px; /* Largura máxima do console central */
+        }
+
+        /* AJUSTE DA IMAGEM PARA OCUPAR TODO O ESPAÇO */
+        img { 
+            width: 100%;      /* Força a imagem a preencher a largura do container */
+            max-width: 100%;  /* Garante que ela não ultrapasse o limite do celular */
+            height: auto;     /* Mantém a proporção original */
+            border-radius: 15px; 
+            margin-bottom: 25px;
+            display: block;
+        }
+
+        h2 { 
+            font-size: 26px; 
+            margin-bottom: 25px; 
+        }
+
+        #login-box { 
+            display: flex; 
+            flex-direction: column; 
+            gap: 15px; 
+        }
+
+        input { 
+            padding: 15px; 
+            border-radius: 8px; 
+            border: none; 
+            width: 100%; 
+            box-sizing: border-box; 
+        }
+
+        button { 
+            padding: 15px; 
+            background: #d35400; 
+            border: none; 
+            color: white; 
+            border-radius: 8px; 
+            font-weight: bold; 
+            cursor: pointer; 
+        }
+
+        #erro { color: #ff4d4d; margin-top: 15px; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="logo-512.png" alt="Capa do Seminário">
+        
+        <h2>Seminário de Missões</h2>
+        
+        <div id="login-box">
+            <input type="password" id="senha" placeholder="Digite a senha de acesso">
+            <button onclick="verificar()">Entrar</button>
+        </div>
+        
+        <p id="erro"></p>
+    </div>
+
+    <script>
+        function verificar() {
+            const senhaDefinida = "mtmissoes";
+            const inputSenha = document.getElementById('senha').value;
+            
+            if (inputSenha === senhaDefinida) {
+                window.location.href = "1.html";
+            } else {
+                document.getElementById('erro').innerText = "Senha incorreta.";
+            }
+        }
+    </script>
+</body>
+</html>
