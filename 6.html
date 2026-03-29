@@ -133,8 +133,12 @@
         const cpf = document.getElementById('cpf_aluno').value;
         const data = new Date().toLocaleDateString();
 
-     const win = window.open('about:blank','_blank');
-        win.document.write(`
+     const html = ` ... SEU HTML DO CERTIFICADO ... `;
+
+const win = window.open();
+win.document.open();
+win.document.write(html);
+win.document.close();
             <html>
             <head>
                 <style>
